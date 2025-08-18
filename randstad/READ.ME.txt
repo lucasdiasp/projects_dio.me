@@ -1,0 +1,93 @@
+# Xbox Game Pass Subscriptions Sales Dashboard
+
+> Dashboard interativo para análise de vendas de assinaturas Xbox Game Pass, incluindo add-ons EA Play e Minecraft Season Pass, filtrado por tipo de assinatura (Annual, Monthly, Quarterly).
+
+---
+
+## Índice
+- [Descrição](#descrição)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Exemplos](#exemplos)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+---
+
+## Descrição
+
+Este projeto fornece uma visão consolidada das assinaturas do Xbox Game Pass, permitindo:
+- Visualizar o **total de vendas** por tipo de assinatura (Annual, Monthly, Quarterly);
+- Analisar os **add-ons EA Play e Minecraft Season Pass**;
+- Avaliar a **participação de assinaturas com auto-renovação**;
+- Gerar relatórios dinâmicos usando **filtros interativos**.
+
+---
+
+## Funcionalidades
+
+- **Resumo financeiro consolidado**:
+  - Total de vendas por assinatura do Xbox Game Pass.
+  - Receita proveniente do EA Play Season Pass.
+  - Receita proveniente do Minecraft Season Pass.
+
+- **Filtros dinâmicos**:
+  - Filtragem por **Subscription Type** (Annual, Monthly, Quarterly).
+  - Segmentação por **Auto Renewal** (Yes/No).
+
+- **Indicadores principais**:
+  - Vendas totais com e sem auto-renovação.
+  - Receita segregada por tipo de plano (Core, Standard, Ultimate).
+
+---
+
+## Tecnologias Utilizadas
+
+- **Microsoft Excel / Power Query** — tratamento e transformação de dados.  
+- **Power BI** — construção do dashboard interativo.  
+- **DAX (Data Analysis Expressions)** — cálculos e medidas personalizadas para KPIs.  
+
+---
+
+## Estrutura do Projeto
+
+/data # Base de assinantes (Excel)
+/dashboard # Relatórios no Power BI
+README.md # Documentação do projeto
+
+
+- **Base de dados**: Tabela de assinantes com ID, plano, data, preço, auto-renovação e add-ons.
+- **Painéis**: Visualização interativa com KPIs e filtros.
+
+2. Abrir base de dados no Excel ou Power BI
+A planilha está localizada na pasta /data.
+O arquivo Power BI está na pasta /dashboard.
+
+3. Uso
+
+Para atualizar os dados: substitua ou atualize a planilha na pasta /data.
+Para visualizar o relatório:
+Abra o arquivo .pbix no Power BI.
+Use o filtro lateral Subscription Type para segmentar a análise.
+Observe os indicadores:
+Total Subscriptions EA Play Season Pass
+Total Subscriptions Minecraft Season Pass
+Total Subscriptions Xbox Game Pass (Yes/No Auto Renewal)
+
+
+*Exemplos*
+Base de assinantes
+Relatórios detalhados
+Dashboard no Power BI
+
+*Contribuição*
+Pull requests são bem-vindos. Para mudanças maiores:
+1.Abra uma issue antes de começar para discutirmos a proposta.
+2.Descreva detalhadamente o que será alterado.
+
+Licença
+
+Este projeto está licenciado sob a licença MIT — veja o arquivo LICENSE para mais detalhes.
